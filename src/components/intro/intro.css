@@ -1,0 +1,139 @@
+.i{
+    display: flex;
+    height: 100vh;
+}
+
+.i-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.i-left-wrapper{
+    margin-top: 5%;
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.i-intro{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.i-name{
+    font-size: 60px;
+}
+
+.i-title{
+    height: 50px;
+    overflow: hidden;
+}
+
+.i-desc{
+    width: 100%;
+}
+
+.i-title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+.i-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #228b22;
+    display: flex;
+    align-items: center;
+}
+
+.i-right{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 50px;
+}
+
+.i-card{
+    overflow: hidden;
+    border-style: double;
+    border-color: forestgreen;
+    border-width: 10px;
+    border-radius: 30px;
+}
+
+.i-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.i-buttons{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15%;
+}
+
+.al{
+    display:flex;
+    object-fit: contain;
+}
+
+.ag{
+    display:flex;
+    object-fit: contain;
+}
+
+.i-linkedin{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.i-github{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .i{
+        flex-direction: column;
+    }
+
+    .i-left-wrapper{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .i-desc{
+        display: none;
+    }
+}
