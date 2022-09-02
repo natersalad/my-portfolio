@@ -20,7 +20,7 @@ const About = () => {
                 <h1 className="a-title">About me:</h1>
                 <p className="a-sub">
                     I was born and raised in South Florida and originate from Mexico.
-                    I love computers, guitar, skateboarding, and cats. Recently I've been interested in webiste development and machine learning.
+                    I love computers, guitar, skateboarding, and cats. Recently I've been interested in website development and machine learning.
                 </p>
                 <p className="a-desc">
                     Productivity and hobbies are what keep me going.

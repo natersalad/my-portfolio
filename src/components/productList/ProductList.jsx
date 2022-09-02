@@ -9,7 +9,7 @@ const ProductList = () => {
             <div className="pl-texts">
                 <h1 className="pl-title">PROJECTS</h1>
                 <p className="pl-desc">
-                    Here is a collection of projects that I have created troughout the year.
+                    Here is a collection of projects that I have created troughout the years.
                     I love to be productive and tap into multiple different interfaces. Coding is my passion, but I do enjoy other
                     types of projects like 3d modeling.
                 </p>

@@ -28,7 +28,7 @@ const Intro = () => {
             </div>
             <div className="i-right">
                 <div className="i-buttons">
-                    <a href="https://github.com/natersalad" className="al">
+                    <a href="https://www.linkedin.com/in/nathan-wand-923a001b4/" className="al">
                         <img src={Linkedin} alt="" className="i-linkedin" />
                     </a>
                     <a href="https://github.com/natersalad" className="ag">
