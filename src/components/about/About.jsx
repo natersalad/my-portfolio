@@ -1,6 +1,7 @@
 import "./about.css"
 import Guitar from "../../img/guitar.PNG"
 import Lucca from "../../img/lucca.jpg"
+import React from "react"
 
 const About = () => {
     return(

@@ -1,5 +1,6 @@
 import Cat from "../../3d/Cat"
 import "./product.css"
+import React from "react"
 
 const Product = ({img, link, heading, desc, objfit}) => {
 
