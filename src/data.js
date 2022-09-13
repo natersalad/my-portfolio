@@ -14,7 +14,7 @@ export const products = [
     {
         id: "2",
         img: soap,
-        link: "https://soapdispenser.tiiny.site/",
+        link: "https://drive.google.com/file/d/19wvX5UINMFr0Sgjj0VHMaCDYlr9wpGmp/view?usp=sharing",
         heading: "Automatic Soap Dispenser",
         desc: "A simple soap dispenser that turns on with motion detection and puts on a 20 second song. This song encourages peopole to wash their hands for the recommended amount of time. I learned arduino, 3d printing, and circuits in this project",
     },
