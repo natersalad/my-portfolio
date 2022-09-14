@@ -12,7 +12,7 @@ export const products = [
     {
         id: "2",
         img: "https://styles.redditmedia.com/t5_3b1wr/styles/communityIcon_qdbg6bz0bud71.png?width=256&s=ccf3d06bf3b8056f312f207c7ce906cf69af6efd",
-        link: "https://github.com/natersalad",
+        link: "https://github.com/natersalad/GPT3-DiscordBot",
         heading: "GPT3 Discord Bot",
         
     },
