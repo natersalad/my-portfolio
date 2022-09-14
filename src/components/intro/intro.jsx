@@ -21,17 +21,16 @@ const Intro = () => {
                         </div>
                     </div>
                     <p className="i-desc">
-                        I am a Computer Engineer at the University of Florida. Currently in my Sophmore year, I am learning
-                        mutliple new concepts and trying to apply them via websites and discord bots. 
+                        I am a Computer Engineer at the University of Florida. Currently in my sophmore year, I am looking for internships for the Summer of 2023.
                     </p>
                 </div>
             </div>
             <div className="i-right">
                 <div className="i-buttons">
-                    <a href="https://www.linkedin.com/in/nathan-wand-923a001b4/" className="al">
+                    <a href="https://www.linkedin.com/in/nathan-wand-923a001b4/" className="al" target="_blank" rel="noreferrer">
                         <img src={Linkedin} alt="" className="i-linkedin" />
                     </a>
-                    <a href="https://github.com/natersalad" className="ag">
+                    <a href="https://github.com/natersalad" className="ag" target="_blank" rel="noreferrer">
                         <img src={Github} alt="" className="i-github"/>
                     </a>
                 </div>

@@ -10,14 +10,13 @@ const ProductList = () => {
                 <h1 className="pl-title">PROJECTS</h1>
                 <p className="pl-desc">
                     Here is a collection of projects that I have created troughout the years.
-                    I love to be productive and tap into multiple different interfaces. Coding is my passion, but I do enjoy other
-                    types of projects like 3d modeling.
+                    Coding is my passion, but I do enjoy other types of projects like 3d modeling/printing
                 </p>
-                <b>Click on one of the projects for more details!</b>
+                <b>Click on a project for more!</b>
             </div>
             <div className="pl-list">
                 {products.map((item) => (
-                    <Product key={item.id} img={item.img} link={item.link} heading={item.heading} desc={item.desc}/>
+                    <Product key={item.id} img={item.img} link={item.link} heading={item.heading}/>
                 ))}
             </div>
         </div>

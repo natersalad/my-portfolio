@@ -1,7 +1,7 @@
 .pl{
-    padding: 50px 70px;
+    padding: 50px 100px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
@@ -16,13 +16,14 @@
 }
 
 .pl-desc{
-    padding-bottom: 2%;
+    margin: 20px 0px;
 }
 
 .pl-list{
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 480px) {

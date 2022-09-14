@@ -2,7 +2,7 @@ import Cat from "../../3d/Cat"
 import "./product.css"
 import React from "react"
 
-const Product = ({img, link, heading, desc, objfit}) => {
+const Product = ({img, link, heading}) => {
 
     return (
         <div className="p-parent">
@@ -21,9 +21,6 @@ const Product = ({img, link, heading, desc, objfit}) => {
                 <h1 className="p-title">
                     {heading}
                 </h1>
-                <p className="p-desc">
-                    {desc}
-                </p>
             </div>
         </div>   
     )

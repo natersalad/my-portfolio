@@ -29,7 +29,7 @@ function CatFollow() {
 export default function Cat() {
     const glft = useLoader(GLTFLoader, KITTYCAT) 
     return(
-        <div style= {{height: "50vh", position: 'relative', top: '-100%'}}>
+        <div style= {{height: "45vh", position: 'relative', top: '-67%'}}>
             <Canvas>
                 <Suspense fallback={null}>
                     <primitive object={glft.scene} scale={140.0} position={[0,0,0]}/>
