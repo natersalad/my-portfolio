@@ -35,7 +35,7 @@ const Contact = () => {
                     <h1 className="c-title">Lets get in contact!</h1>
                     <div className="c-info">
                         <div className="c-info-items">
-                            <p style={{fontSize: '1.5rem'}} className="phone"> <span style={{fontWeight: 'bolder'}}>Phone: </span>945-612-2450</p>
+                            <p style={{fontSize: '1.5rem'}} className="phone"> <span style={{fontWeight: 'bolder'}}>Phone: </span>954-612-2450</p>
                         </div>
                         <div className="c-info-items">
                             <p style={{fontSize: '1.5rem'}} className="email"> 
