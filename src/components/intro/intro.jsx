@@ -1,5 +1,5 @@
 import "./intro.css"
-import Me from "../../img/nathanfacewebsite.png"
+import Me from "../../img/nathanfacewebsite2.png"
 import Linkedin from "../../img/linkedin.png"
 import Github from "../../img/github.png"
 import React from "react"
