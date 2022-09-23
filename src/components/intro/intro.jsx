@@ -1,5 +1,5 @@
 import "./intro.css"
-import Me from "../../img/nathanfacewebsite2.png"
+import Me from "../../img/nathanfacewebsite2.JPG"
 import Linkedin from "../../img/linkedin.png"
 import Github from "../../img/github.png"
 import React from "react"
@@ -27,7 +27,7 @@ const Intro = () => {
             </div>
             <div className="i-right">
                 <div className="i-buttons">
-                    <a href="https://www.linkedin.com/in/nathan-wand-923a001b4/" className="al" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/nathanwand" className="al" target="_blank" rel="noreferrer">
                         <img src={Linkedin} alt="" className="i-linkedin" />
                     </a>
                     <a href="https://github.com/natersalad" className="ag" target="_blank" rel="noreferrer">
