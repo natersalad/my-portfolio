@@ -1,32 +1,47 @@
+import React, { useState, useEffect } from "react";
 import "./about.css"
 import Guitar from "../../img/guitar.PNG"
 import Lucca from "../../img/lucca.jpg"
-import React from "react"
 
 const About = () => {
+
+    const [count, setCount] = useState(5);
+    
+    useEffect(() => {
+        const checkDate = () => {
+        const today = new Date();
+        if (today.getMonth() === 10 && today.getDate() === 1) {
+            setCount((prevCount) => prevCount + 1);
+        }
+        };
+    
+        // Check for November 1st every day
+        const intervalId = setInterval(checkDate, 24 * 60 * 60 * 1000);
+    
+        // Call checkDate immediately when the component mounts
+        checkDate();
+    
+        // Cleanup the interval when the component unmounts
+        return () => clearInterval
+    }, []);
+
     return(
         <div className="a">
             <div className="a-left">
-                <div className="a-card bg"></div>
-                <div className="a-card">
+                <div className="a-img bg"></div>
                     <img 
-                      src= {Guitar}
-                      alt="" 
-                      className="a-img" 
+                        src= {Guitar}
+                        alt="" 
+                        className="a-img" 
                     />
-                </div>
             </div>
             <div className="a-right">
                 <h1 className="a-title">About me:</h1>
                 <p className="a-sub">
-                    I was born and raised in South Florida and originate from Mexico.
-                    I love computers, guitar, skateboarding, and cats. Recently I've been interested in website development and machine learning.
+                    I'm from South Florida with Mexican roots. I enjoy computers, playing guitar, and cats. Lately, I've been getting into game development, along with website building and machine learning.
                 </p>
                 <p className="a-desc">
-                    Productivity and hobbies are what keep me going.
-                    Guitar and skateboarding have been my two favorite hobbies that have stayed over the years.
-                    They have allowed me to tap into mutiple different cultures and diversify my opinions.
-                    In the end, I'm always trying to chase a goal I have in mind whether it be internships, projects, friends, or even a simple skatetrick.
+                    Juggling productivity and hobbies is the key to keeping my motivation alive. The guitar has been a consistent and cherished hobby that has not only provided me with endless enjoyment but has also granted me the opportunity to delve into diverse cultures and enrich my perspectives. Alongside this, I'm always on the lookout for new goals to pursue—whether it's seeking out internships, diving into exciting projects, nurturing valuable friendships, or even mastering simple yet satisfying challenges.
                 </p>
                 <div className="a-cat">
                     <img src={Lucca} alt="" className="a-cat-img" />
@@ -35,7 +50,7 @@ const About = () => {
                             My Tabby Cat Lucca:
                         </h3>
                         <p className="a-cat-desc">
-                            He's a five year old sweetheart and my best friend. 
+                            He's a {count} year old sweetheart and my best friend. 
                         </p>
                     </div>
                 </div>

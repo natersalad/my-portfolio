@@ -1,4 +1,6 @@
 .i{
+    margin-left: auto;
+    margin-left: auto;
     display: flex;
     height: 100vh;
 }
@@ -10,56 +12,58 @@
 }
 
 .i-left-wrapper{
-    margin-top: 5%;
-    padding: 50px;
-    height: 50%;
+    margin-top: 8vh;
+    padding-left: 4vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .i-intro{
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 300;
 }
 
 .i-name{
-    font-size: 60px;
+    font-size: 5vw;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .i-title{
-    height: 50px;
+    height: 6.5vh;
     overflow: hidden;
 }
 
 .i-desc{
+    padding-top: 2vh;
     width: 100%;
+    font-size: 1.3vw;
 }
 
 .i-title-wrapper{
-    height: 100%;
     animation: move 10s ease-in-out infinite alternate;
 }
 
 @keyframes move {
     25%{
-        transform: translateY(-50px);
+        transform: translateY(-6vh);
     }
     50%{
-        transform: translateY(-100px);
+        transform: translateY(-12vh);
     }
     75%{
-        transform: translateY(-150px);
+        transform: translateY(-18vh);
     }
     100%{
-        transform: translateY(-200px);
+        transform: translateY(-24vh);
     }
 }
 
 .i-title-item{
-    height: 50px;
-    font-size: 30px;
+    height: 6vh;
+    font-size: 2vw;
     font-weight: bold;
     color: #228b22;
     display: flex;
@@ -77,51 +81,71 @@
 
 .i-card{
     overflow: hidden;
+}
+
+.i-img{
+    width: 45vw;
     border-style: double;
     border-color: forestgreen;
     border-width: 10px;
     border-radius: 30px;
-}
-
-.i-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .i-buttons{
-    width: 70%;
-    height: 15%;
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    object-fit: contain;
+    width: 30vw;
+    padding-bottom: 3vh;
 }
 
 .al{
-    display:flex;
     object-fit: contain;
 }
 
 .ag{
-    display:flex;
     object-fit: contain;
 }
 
 .i-linkedin{
-    display: block;
-    width: 100%;
-    height: 100%;
+    width: 7vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.i-linkedin:hover{
+    transform: scale(1.1);
 }
 
 .i-github{
-    display: block;
-    width: 100%;
-    height: 100%;
+    width: 7vw;
+    transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 480px) {
+.i-github:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 550px) {
     .i{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .i-intro{
+        font-size: 4vw;
+    }
+
+    .i-name{
+        font-size: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .i-title-item{
+        font-size: 4vw;
     }
 
     .i-left-wrapper{
@@ -130,10 +154,39 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 100%;
+        height: 90%;
+        width: 100vw;
+    }
+
+    .i-right{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .i-img{
+        width: 80vw;
+    }
+
+    .i-buttons{
+        width: 60vw;
+    }
+
+    .i-linkedin{
+        width: 20vw;
+    }
+
+    .i-github{
+        width: 20vw;
+    }
+
+    .i-title-item{
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
     }
 
     .i-desc{
         display: none;
     }
 }
+

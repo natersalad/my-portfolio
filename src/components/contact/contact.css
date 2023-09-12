@@ -22,19 +22,24 @@
 
 .c-title{
     font-weight: bolder;
-    font-size: 60px;
-    margin: 10px 0px;
+    font-size: 5vw;
     width: 80%;
 }
 
 .c-info-items{
     display: flex;
-    align-items: center;
-    margin: 35px 0px;
-    width: 70%;
+    flex-direction: column;
+    width: 30vw;
 }
 
+.c-phone{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
 
+.c-email{
+    font-size: 1.5vw;
+}
 
 .c-right{
     flex: 1;
@@ -46,6 +51,7 @@
 
 .c-desc{
     font-weight: 200;
+    font-size: 1.5vw;
 }
 
 form{
@@ -53,19 +59,19 @@ form{
 }
 
 input{
-    width: 50%;
-    height: 50px;
+    width: 25vw;
+    height: 4vw;
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 1vw;
     padding-left: 10px;
 }
 
 textarea{
-    width: 100%;
+    width: 45vw;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 1vw;
     padding-left: 10px;
 }
 
@@ -75,57 +81,95 @@ button{
     background-color: forestgreen;
     color: white;
     font-weight: 500;
+    font-size: 1vw;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+button:not(:disabled):hover {
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transform: scale(1.03);
 }
 
-button:active {
+button:not(:disabled):active {
     transform: scale(0.97);
     background-color: rgb(26, 104, 26);
 }
 
-@media screen and (max-width: 480px) {
+.c-done{
+    color: forestgreen;
+    font-size: 1.5vw;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
     .c-wrapper{
         flex-direction: column;
         padding: 0px, 50px;
     }
 
     .c-title{
-        font-size: 30px;
+        font-size: 10vw;
     }
     .c-bg{
         height: 110%;
     }
 
     .c-info-items{
-        margin: 20px, 0px;
-        width: 100%;
+        margin: 10px 0px;
+        width: 70%;
+    }
+    
+    .c-phone{
+        font-size: 3vw;
+    }
+
+    .c-email{
+        font-size: 3vw;
     }
 
     .c-desc{
-        display: none;
+        font-size: 3vw;
     }
 
     form{
         margin-top: 0px;
         display: flex;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;   
     }
 
     input{
-        width: 35%;
+        width: 70%;
+        font-size: 3vw;
         height: 40px;
         margin: 10px;
         margin-left: 0px;
     }
 
+    textarea{
+        width: 70%;
+        font-size: 3vw;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
     button{
-        margin-top: 10px;
+        width: 30%;
+        font-size: 3vw;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    .c-done{
+        font-size: 4vw;
     }
 }
 

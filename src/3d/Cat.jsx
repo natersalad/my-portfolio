@@ -32,7 +32,7 @@ export default function Cat() {
         <div style= {{height: "45vh", position: 'relative', top: '-67%'}}>
             <Canvas>
                 <Suspense fallback={null}>
-                    <primitive object={glft.scene} scale={140.0} position={[0,0,0]}/>
+                    <primitive object={glft.scene} scale={150.0} position={[0,0,0]}/>
                     <CatFollow/>
                     <ambientLight />
                 </Suspense>

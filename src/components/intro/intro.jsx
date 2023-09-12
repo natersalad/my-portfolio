@@ -9,19 +9,19 @@ const Intro = () => {
         <div className="i">
             <div className="i-left">
                 <div className="i-left-wrapper">
-                    <h2 className="i-intro">Hi, My name is</h2>
+                    <h2 className="i-intro">Hi, my name is</h2>
                     <h1 className="i-name">Nathan Wand</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">UF Undergraduate</div>
                             <div className="i-title-item">Computer Engineer</div>
                             <div className="i-title-item">Website Designer</div>
+                            <div className="i-title-item">Game Developer</div>
                             <div className="i-title-item">Guitarist</div>
-                            <div className="i-title-item">Skateboarder</div>
                         </div>
                     </div>
                     <p className="i-desc">
-                        I am a Computer Engineer at the University of Florida. Currently in my sophmore year, I am looking for internships for the Summer of 2023.
+                        I'm a junior studying Computer Engineering at the University of Florida, actively seeking internships for the summer of 2024.
                     </p>
                 </div>
             </div>

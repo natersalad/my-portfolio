@@ -1,59 +1,147 @@
-.p-parent{
-    padding-top: 5%;
-    width: 30%;
-    height: 60vh;
-    align-items: center;
+.p{
+    width: 100%;
+    height: 45vw;
+    display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 
+.p-card{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.p-left {
+    flex: 1;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
+}
+
+.p-right {
+    flex: 1;
+    order: 2;
+    display: flex;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+.p-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .p-box{
-    width: 99%;
-    height: 40vh;
-    border: 2px solid rgb(238, 231, 231);
+    width: 35vw;
+    border: solid rgb(238, 231, 231) 3px;
     border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .p-browser{
-    height: 20px;
+    height: 2.3vh;
     background-color: rgb(238, 231, 231);
     align-items: center;
     display: flex;
 }
 
+
 .p-circle{
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background-color: white;
     border-radius: 50%;
     margin: 3px;
 }
 
-.p-img{
+.p-texts-right{
     width: 100%;
+    padding: 2% 5%;
+    text-align: left;
+}
+
+.p-texts-left{
+    width: 100%;
+    padding-right: 1%;
+    text-align: left;
 }
 
 .p-title{
     padding-top: 15px;
     width: 100%;
-    font-size: larger;
-    font-weight: bold;
+    font-size: 2vw;
+    font-weight: 500;
 }
 
-@media screen and (max-width: 480px) {
+.p-desc{
+    font-size: 1.2vw;
+    font-weight: 300;
+    padding: 1vh 0% 0% 0%;
+}
+
+.p-subtitle{
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 450;
+    padding: 2vh 0% 0% 0%;
+}
+
+@media screen and (max-width: 550px) {
+    .p{
+        height: 100%;
+    }
+    .p-card{
+        margin: 5%;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .p-left{
+        padding: 0;
+        order: 1;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+    .p-right{
+        padding: 0;
+        order: 1;
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
     .p-parent{
         width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .p-desc{
-        font-size: small;
     }
     .p-box{
+        position: relative;
+        margin-top: 5%;
         width: 100%;
+        height: 100%;
     }
-    .p-text{
-        width: 100%;
+    .p-texts-right{
+        padding: 5%;
+    }
+    .p-texts-left{
+        padding: 5%;
+    }
+    .p-title{
+        font-size: 5vw;
+    }
+    .p-desc{
+        font-size: 3vw;
+    }
+    .p-subtitle{
+        font-size: 4vw;
     }
 }

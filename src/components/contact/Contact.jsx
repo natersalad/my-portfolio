@@ -6,6 +6,18 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const formRef = useRef();
     const [done, setDone] = useState(false);
+    const [disabled, setDisabled] = useState(false);
+
+    const handleInputChange = () => {
+        const name = formRef.current.elements.user_name.value;
+        const subj = formRef.current.elements.user_subject.value;
+        const email = formRef.current.elements.user_email.value;
+        const message = formRef.current.elements.message.value;
+        
+        const isValid = name && subj && email && message;
+        // Enable the button only when all input fields are filled
+        setDisabled(isValid);
+    };
 
     const handleSumbit = (e) => {
         e.preventDefault();
@@ -14,8 +26,9 @@ const Contact = () => {
         const subj = e.target.elements.user_subject.value;
         const email = e.target.elements.user_email.value;
         const message = e.target.elements.message.value;
+        
 
-        if(!(name === "" || subj === "" || email === "" || message === "")) {
+        if((disabled)) {
             console.log("submitted");
             emailjs.sendForm('service_15kdnle', 'template_c4jnnoo', formRef.current, 'SM7VwO6yrGjIp_Z_M')
             .then((result) => {
@@ -27,6 +40,7 @@ const Contact = () => {
         }
     }
 
+
     return(
         <div className = "c">
             <div className="c-bg"></div>
@@ -35,11 +49,12 @@ const Contact = () => {
                     <h1 className="c-title">Lets get in contact!</h1>
                     <div className="c-info">
                         <div className="c-info-items">
-                            <p style={{fontSize: '1.5rem'}} className="phone"> <span style={{fontWeight: 'bolder'}}>Phone: </span>954-612-2450</p>
-                        </div>
-                        <div className="c-info-items">
-                            <p style={{fontSize: '1.5rem'}} className="email"> 
-                                <span style={{fontWeight: 'bold'}}> Email: </span>
+                            <p className="c-phone"> 
+                                <span style={{fontWeight: 'bolder'}}>Phone: </span>
+                                954-612-2450
+                            </p>
+                            <p className="c-email"> 
+                                <span style={{fontWeight: 'bold'}}>Email: </span>
                                 wandnathan@ufl.edu 
                             </p>
                         </div>
@@ -51,12 +66,12 @@ const Contact = () => {
                          You can email me using the box below or using the email on the side! 
                     </p>
                     <form ref={formRef} onSubmit={handleSumbit}>
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="text" placeholder="Email" name="user_email" />
-                        <textarea name="message" placeholder="Message" rows="5"></textarea>
-                        <button>Submit</button>
-                        {done && "Thank you"}
+                        <input type="text" placeholder="Name" name="user_name" onChange={handleInputChange} />
+                        <input type="text" placeholder="Subject" name="user_subject" onChange={handleInputChange} />
+                        <input type="text" placeholder="Email" name="user_email" onChange={handleInputChange} />
+                        <textarea name="message" placeholder="Message" rows="5" onChange={handleInputChange}></textarea>
+                        <button type="submit" disabled={done || !disabled}>Submit</button>
+                        {done && <div className="c-done">Thank you for your submission!</div>}
                     </form>
                 </div>
             </div>
