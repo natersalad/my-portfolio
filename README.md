@@ -1,5 +1,6 @@
-## Website to showcase myself and my projects
+# Website to showcase myself and my projects
 This website is fully developed in React.js.
+nathanwand.com
 
 ## Page 1: Intro 
 This page showcases my major, hobies, GitHub, LinkedIn, and a photo of myself in Chicago's nature.
