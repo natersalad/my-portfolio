@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "839a623b450b10965d5b",
+    "revision": "384f1b6c02882d86b2de",
     "url": "/static/css/main.3f0e989d.chunk.css"
   },
   {
-    "revision": "839a623b450b10965d5b",
-    "url": "/static/js/main.d7f5304b.chunk.js"
+    "revision": "384f1b6c02882d86b2de",
+    "url": "/static/js/main.15246277.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "b9d054399215340ed75c",
-    "url": "/static/js/2.b939b2c8.chunk.js"
+    "revision": "5e7f0f538607b1583f20",
+    "url": "/static/js/2.be7ad67a.chunk.js"
   },
   {
     "revision": "a7d005c287a3be6a04903b93b369c9f0",
@@ -52,7 +52,15 @@ self.__precacheManifest = [
     "url": "/static/media/csgoClip.f8896fa6.mp4"
   },
   {
-    "revision": "3c71878b4f01ddfd2c19c2edc4099d08",
+    "revision": "9f8b0c6f1bf72a11552ce746c9f99570",
+    "url": "/static/media/MedScanThumbnail.9f8b0c6f.png"
+  },
+  {
+    "revision": "c0cb72728c6a48de79b00a706201a776",
+    "url": "/static/media/MedScanVideo.c0cb7272.mp4"
+  },
+  {
+    "revision": "6ce7aa9308b2f068ddc9239484293b0a",
     "url": "/index.html"
   }
 ];
