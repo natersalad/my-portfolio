@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "384f1b6c02882d86b2de",
+    "revision": "f532b59134523da8e08e",
     "url": "/static/css/main.3f0e989d.chunk.css"
   },
   {
-    "revision": "384f1b6c02882d86b2de",
-    "url": "/static/js/main.15246277.chunk.js"
+    "revision": "f532b59134523da8e08e",
+    "url": "/static/js/main.2c2aceba.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/MedScanVideo.c0cb7272.mp4"
   },
   {
-    "revision": "6ce7aa9308b2f068ddc9239484293b0a",
+    "revision": "2c666f1f851bfb52d979a7c940e235ae",
     "url": "/index.html"
   }
 ];
