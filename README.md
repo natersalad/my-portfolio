@@ -11,9 +11,9 @@ Here I describe myself in a short paragraph and go more in depth on my hobbies a
 ## Page 3: Timeline
 This is a vertical timeline that highlights milestones in my life and has an icon, title, subtitle, and description. This section is for school, work experinece, and milestones in my life.
 
-## Page 3: Projects
+## Page 4: Projects
 In the projects page, I have a list of projects that I have completed over the years of developing. In this list, I have a thumbnail and a demo video of my project alongside a description and what software I used for it.
 
-## Page 4: Contact
+## Page 5: Contact
 Using Email.Js I create a form for anyone to contact my email.
 
