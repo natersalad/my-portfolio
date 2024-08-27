@@ -1,175 +1,174 @@
-
-.c{
-    height: 100vh;
-    position: relative;
+.c {
+  height: 100vh;
+  position: relative;
 }
 
-.c-bg{
-    width: 20px;
-    height: 100%;
-    background-color: forestgreen;
-    position: absolute;
+.c-bg {
+  width: 20px;
+  height: 100vh;
+  background-color: forestgreen;
+  position: absolute;
 }
 
-.c-wrapper{
-    padding: 50px;
-    display: flex;
+.c-wrapper {
+  padding: 50px;
+  display: flex;
 }
 
-.c-left{
-    flex: 1;
+.c-left {
+  flex: 1;
 }
 
-.c-title{
-    font-weight: bolder;
-    font-size: 5vw;
-    width: 80%;
+.c-title {
+  font-weight: bolder;
+  font-size: 5vw;
+  width: 80%;
 }
 
-.c-info-items{
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
+.c-info-items {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
 }
 
-.c-phone{
-    font-size: 1.5vw;
-    margin-bottom: 1vw;
+.c-phone {
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
 }
 
-.c-email{
-    font-size: 1.5vw;
+.c-email {
+  font-size: 1.5vw;
 }
 
-.c-right{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.c-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.c-desc{
-    font-weight: 200;
-    font-size: 1.5vw;
+.c-desc {
+  font-weight: 200;
+  font-size: 1.5vw;
 }
 
-form{
-    margin-top: 20px;
+form {
+  margin-top: 20px;
 }
 
-input{
-    width: 25vw;
-    height: 4vw;
-    border: none;
-    border-bottom: 1px solid black;
-    margin: 10px 0px;
-    font-size: 1vw;
-    padding-left: 10px;
+input {
+  width: 25vw;
+  height: 4vw;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 1vw;
+  padding-left: 10px;
 }
 
-textarea{
-    width: 45vw;
-    margin: 10px 0px;
-    font-size: 1vw;
-    padding-left: 10px;
+textarea {
+  width: 45vw;
+  margin: 10px 0px;
+  font-size: 1vw;
+  padding-left: 10px;
 }
 
-button{
-    border: 0;
-    padding: 15px;
-    background-color: forestgreen;
-    color: white;
-    font-weight: 500;
-    font-size: 1vw;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+button {
+  border: 0;
+  padding: 15px;
+  background-color: forestgreen;
+  color: white;
+  font-weight: 500;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 button:disabled {
-    background-color: #555;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+  background-color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 button:not(:disabled):hover {
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transform: scale(1.03);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.03);
 }
 
 button:not(:disabled):active {
-    transform: scale(0.97);
-    background-color: rgb(26, 104, 26);
+  transform: scale(0.97);
+  background-color: rgb(26, 104, 26);
 }
 
-.c-done{
-    color: forestgreen;
-    font-size: 1.5vw;
-    margin-top: 10px;
-    font-weight: 500;
+.c-done {
+  color: forestgreen;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 550px) {
-    .c-wrapper{
-        flex-direction: column;
-        padding: 0px, 50px;
-    }
+  .c-wrapper {
+    flex-direction: column;
+    padding: 10vw;
+  }
 
-    .c-title{
-        font-size: 10vw;
-    }
-    .c-bg{
-        height: 110%;
-    }
+  .c-title {
+    font-size: 10vw;
+  }
+  .c-bg {
+    height: 100vh;
+  }
 
-    .c-info-items{
-        margin: 10px 0px;
-        width: 70%;
-    }
-    
-    .c-phone{
-        font-size: 3vw;
-    }
+  .c-info-items {
+    margin: 10px 0px;
+    width: 70%;
+  }
 
-    .c-email{
-        font-size: 3vw;
-    }
+  .c-phone {
+    font-size: 3vw;
+  }
 
-    .c-desc{
-        font-size: 3vw;
-    }
+  .c-email {
+    font-size: 3vw;
+  }
 
-    form{
-        margin-top: 0px;
-        display: flex;
-        flex-wrap: wrap;   
-    }
+  .c-desc {
+    font-size: 3vw;
+  }
 
-    input{
-        width: 70%;
-        font-size: 3vw;
-        height: 40px;
-        margin: 10px;
-        margin-left: 0px;
-    }
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    textarea{
-        width: 70%;
-        font-size: 3vw;
-        margin: 10px;
-        margin-left: 0px;
-    }
+  input {
+    width: 70%;
+    font-size: 3vw;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0px;
+  }
 
-    button{
-        width: 30%;
-        font-size: 3vw;
-        margin: 10px;
-        margin-left: 0px;
-    }
+  textarea {
+    width: 70%;
+    font-size: 3vw;
+    margin: 10px;
+    margin-left: 0px;
+  }
 
-    .c-done{
-        font-size: 4vw;
-    }
+  button {
+    width: 30%;
+    font-size: 3vw;
+    margin: 10px;
+    margin-left: 0px;
+  }
+
+  .c-done {
+    font-size: 4vw;
+  }
 }
-

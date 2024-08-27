@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import './VideoBox.css';
+import React, { useState, useRef } from "react";
+import "./VideoBox.css";
 
 const VideoBox = ({ thumbnailSrc, videoSrc }) => {
   const [hovered, setHovered] = useState(false);
@@ -21,12 +21,22 @@ const VideoBox = ({ thumbnailSrc, videoSrc }) => {
   };
 
   return (
-    <div className="video-box" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
+    <div
+      className="video-box"
+      onMouseEnter={handleHover}
+      onMouseLeave={handleMouseLeave}
+    >
       <img src={thumbnailSrc} alt="Thumbnail" className="thumbnail" />
-      <video ref={videoRef} src={videoSrc} autoPlay muted loop className="video" />
+      <video
+        ref={videoRef}
+        src={videoSrc}
+        autoPlay
+        muted
+        loop
+        className="video"
+      />
     </div>
   );
 };
 
 export default VideoBox;
-

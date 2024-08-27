@@ -21,8 +21,11 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            I'm a senior studying Computer Science at the University of Florida,
-            currently seeking new grad positions for 2025.
+            I'm a senior at the University of Florida majoring in Computer
+            Science and persuing Electrical Engineering and Digital Arts and
+            Sciences minors with a Certificate in A.I. Fundementals. I have a
+            passion for software development, game design, robotics, artifical
+            intelligence, and music. Seeking new grad positions for 2025.
           </p>
         </div>
       </div>

@@ -1,34 +1,33 @@
 .video-box {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .thumbnail {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 1;
-    transition: opacity 0.3s; /* Fade in the video over 0.3 seconds */
-  }
-  
-  .video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 0; /* Hide the video */
-    transition: opacity 0.3s; /* Fade in the video over 0.3 seconds */
-  }
-  
-  .video-box:hover .thumbnail {
-    opacity: 0; /* Fade out the thumbnail on hover */
-  }
-  
-  .video-box:hover .video {
-    opacity: 1; /* Fade in the video on hover */
-  }
-  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.thumbnail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.3s; /* Fade in the video over 0.3 seconds */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0; /* Hide the video */
+  transition: opacity 0.3s; /* Fade in the video over 0.3 seconds */
+}
+
+.video-box:hover .thumbnail {
+  opacity: 0; /* Fade out the thumbnail on hover */
+}
+
+.video-box:hover .video {
+  opacity: 1; /* Fade in the video on hover */
+}
