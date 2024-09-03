@@ -58,7 +58,7 @@ export const timelineData = [
   {
     id: 4,
     icon: AmazonIcon,
-    date: "May 2025 - August 2025",
+    date: "May 2024 - August 2024",
     heading: "Software Development Engineer Intern",
     subheading: "Amazon Web Services (AWS)",
     description: `
