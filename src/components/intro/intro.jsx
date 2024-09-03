@@ -1,5 +1,5 @@
 import "./intro.css";
-import Me from "../../img/nathanjapan.jpg";
+import Me from "../../img/nathanjapan.webp";
 import Linkedin from "../../img/linkedin.png";
 import Github from "../../img/github.png";
 import React from "react";
