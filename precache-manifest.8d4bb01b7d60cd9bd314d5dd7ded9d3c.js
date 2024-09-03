@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ab9136849df3af75b0f5",
+    "revision": "a571539a5288c51c58b0",
     "url": "/static/css/main.b7d60e5b.chunk.css"
   },
   {
-    "revision": "ab9136849df3af75b0f5",
-    "url": "/static/js/main.22951823.chunk.js"
+    "revision": "a571539a5288c51c58b0",
+    "url": "/static/js/main.6a53263e.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/luccasmart.5939a491.png"
   },
   {
-    "revision": "e47ffbf2c01eaa88d0b76b4eff0fee64",
-    "url": "/static/media/nathanjapan.e47ffbf2.jpg"
+    "revision": "88c9194bff41fbde16dbbb59c69c04cd",
+    "url": "/static/media/nathanjapan.88c9194b.webp"
   },
   {
     "revision": "abc3af106f669f886fd09a13cdb77224",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/florida_icon.586bf206.svg"
   },
   {
-    "revision": "af5ef510cfc2aec8f6e18157d08899d7",
+    "revision": "09c528087c2f44f9a8e78bb1b2ac1af6",
     "url": "/index.html"
   }
 ];
