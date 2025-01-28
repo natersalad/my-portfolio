@@ -4,24 +4,30 @@ import Guitar from "../../img/guitar.PNG";
 import Lucca from "../../img/luccasmart.png";
 
 const About = () => {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const checkDate = () => {
+    const calculateAge = () => {
       const today = new Date();
-      if (today.getMonth() === 10 && today.getDate() === 1) {
-        setCount((prevCount) => prevCount + 1);
+      const birthDate = new Date(2017, 10, 1); // November 1st, 2017
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDifference = today.getMonth() - birthDate.getMonth();
+      if (
+        monthDifference < 0 ||
+        (monthDifference === 0 && today.getDate() < birthDate.getDate())
+      ) {
+        age--;
       }
+      setCount(age);
     };
 
-    // Check for November 1st every day
-    const intervalId = setInterval(checkDate, 24 * 60 * 60 * 1000);
+    calculateAge();
 
-    // Call checkDate immediately when the component mounts
-    checkDate();
+    // Recalculate age every year on November 1st
+    const intervalId = setInterval(calculateAge, 365 * 24 * 60 * 60 * 1000);
 
     // Cleanup the interval when the component unmounts
-    return () => clearInterval;
+    return () => clearInterval(intervalId);
   }, []);
 
   return (

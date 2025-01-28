@@ -6,6 +6,8 @@ import medscanThumbnail from "./img//MedScanThumbnail.png";
 import medscanVideo from "./vids//MedScanVideo.mp4";
 import beatbladeVideo from "./vids/BeatBladeClip.mp4";
 import beatbladeThumbnail from "./img/beatbladeThumbnail.png";
+import repentThumbnail from "./img/repentThumbnail.png";
+import repentVideo from "./vids/RepentClip.mp4";
 
 export const products = [
   {
@@ -29,6 +31,15 @@ export const products = [
   },
   {
     id: "3",
+    thumbnailSrc: repentThumbnail,
+    videoSrc: repentVideo,
+    link: "https://natersalad.itch.io/repent",
+    heading: "Repent: A TopDown Procedural Horror Game",
+    madeWith: "Unity, C#",
+    desc: "Repent is a tense, 2D top-down horror game that tests your survival skills with a unique crutch-based movement system. Explore procedurally generated levels, evade relentless ghost of your Wife, and collect items to atone for your sins. Click on the image to play now and see if you can escape your own guilt!",
+  },
+  {
+    id: "4",
     thumbnailSrc: beatbladeThumbnail,
     videoSrc: beatbladeVideo,
     link: "https://natersalad.itch.io/beatblade",
@@ -37,7 +48,7 @@ export const products = [
     desc: "BeatBlade is a rhythm-based action game where timing is everything. Match the beat of the music to unleash powerful attacks against formidable foes. Choose between battling the Rhino in Easy Mode or the Demon King in Hard Mode. Stay in sync, stay alive, and bring the monsters down with precision strikes. Your rhythm is your weapon—can you keep up?",
   },
   {
-    id: "4",
+    id: "5",
     thumbnailSrc: csgoThumbnail,
     videoSrc: csgoVideo,
     link: "https://github.com/natersalad/CS-GO-Data-Tracker",

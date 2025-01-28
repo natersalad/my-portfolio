@@ -3,20 +3,30 @@ import "./VideoBox.css";
 
 const VideoBox = ({ thumbnailSrc, videoSrc }) => {
   const [hovered, setHovered] = useState(false);
-  const videoRef = useRef(null); // Create a ref for the video element
+  const videoRef = useRef(null);
 
   const handleHover = () => {
     setHovered(true);
     if (videoRef.current) {
-      videoRef.current.currentTime = 0; // Reset video to the beginning
-      videoRef.current.play(); // Start playing the video
+      videoRef.current.currentTime = 0;
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            // Automatic playback started!
+          })
+          .catch((error) => {
+            // Auto-play was prevented
+            console.error("Video playback failed:", error);
+          });
+      }
     }
   };
 
   const handleMouseLeave = () => {
     setHovered(false);
     if (videoRef.current) {
-      videoRef.current.pause(); // Pause the video
+      videoRef.current.pause();
     }
   };
 
@@ -27,14 +37,7 @@ const VideoBox = ({ thumbnailSrc, videoSrc }) => {
       onMouseLeave={handleMouseLeave}
     >
       <img src={thumbnailSrc} alt="Thumbnail" className="thumbnail" />
-      <video
-        ref={videoRef}
-        src={videoSrc}
-        autoPlay
-        muted
-        loop
-        className="video"
-      />
+      <video ref={videoRef} src={videoSrc} muted loop className="video" />
     </div>
   );
 };
