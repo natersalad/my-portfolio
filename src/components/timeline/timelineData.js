@@ -34,7 +34,7 @@ export const timelineData = [
     date: "August 2021 – Present",
     heading: "Univeristy of Florida",
     subheading:
-      "Major: Computer Science | Minors: Electical Engineering & Digital Arts and Sciences | GPA: 3.72/4.0",
+      "Major: Computer Science | Minors: Electical Engineering & Digital Arts and Sciences | GPA: 3.74/4.0",
     description: `
         I chose to major in Computer Science because I’m passionate about full stack development—building everything from the front-end user experience to the back-end systems that make it all work. 
         My minor in Electrical Engineering allows me to explore robotics and embedded systems, areas where hardware meets software in fascinating ways. 
